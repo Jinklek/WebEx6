@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Задание 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header-area">
+    <div class="container-fluid px-0">
+        <div class="row g-0 align-items-center">
+
+            <header class="col-12 col-md-6 py-1">
+                <div class="text-center text-md-start">
+                    <img src="image1.jpeg" alt="Логотип" class="logo-img">
+                    <span>Задание 5</span>
+                </div>
+            </header>
+
+            <nav class="col-12 col-md-6 mt-2 mt-md-0">
+                <ul class="d-flex justify-content-center justify-content-md-end gap-4 p-2 m-0">
+                    <li><a href="#links">Ссылки</a></li>
+                    <li><a href="#table">Таблица</a></li>
+                    <li><a href="#form">Формы</a></li>
+                    <li><a href="#calculator">Калькулятор</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </div>
+</div>
+
+<main class="container my-3">
+    <div class="row g-3">
+        <section id="links" class="col-12 p-3">
+        <h2>
+            Список гиперссылок
+        </h2>
+        <ul>
+            <li><a href="http://kubsu.ru/">1 Гиперссылка на сайт kubsu.ru</a></li>
+            <li><a href="https://www.kubsu.ru/">2 Гиперссылка на сайт kubsu.ru в протоколе https</a></li>
+            <li id="whw">
+                <a href="http://kubsu.ru">
+                    3 <img src="image.jpg" alt="цветок" width="400" height="400">
+                </a>
+            </li>
+            <li><a href="second.html">4 Сокращённая ссылка на внутреннюю страницу</a></li>
+            <li><a href="index.html">5 Сокращенная ссылка на главную страницу</a></li>
+            <li><a href="#whw">6 Ссылка на картинку на текущей странице</a></li>
+            <li><a href="https://www.dns-shop.ru/search/?q=powerbank&amp;category=17a8b19d16404e77&amp;fr%5B3he%5D=20000-29999">7 Ссылка с тремя параметрами</a></li>
+            <li><a href="https://www.kubsu.ru/it/?id=rec2439454101">8 Ссылка с параметром id</a> </li>
+            <li><a href="./second.html">9 Относительная ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="about/page.html">10 Относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href="../index.html">11 Относительная ссылка на страницу в каталоге выше уровнем </a></li>
+            <li><a href="../../index.html">12 Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+            <li>13. Доступен <a href="https://kubsu.ru"> Сайт КубГУ </a></li>
+            <li><a href="https://www.kubsu.ru/it/#rec2439454101">14 Ссылка на фрагмент сайта</a> </li>
+            <li>
+                <p style="font-size: 20px;">НАЖИМАТЬ НА КРУГ ИЛИ ПРЯМОУГОЛЬНИК</p>
+                <div class="map-wrapper">
+                    <img src="map.png" alt="Карта" usemap="#map">
+                    <map name="map">
+                        <area shape="rect" coords="74,177,226,263" href="https://www.kubsu.ru/" alt="Прямоугольник">
+                        <area shape="circle" coords="397,230,60" href="./second.html" alt="Круг">
+                    </map>
+                </div>
+            </li>
+            <li><a href="">16 Ссылка с пустым href</a></li>
+            <li><a>17 Ссылка без href</a></li>
+            <li><a href="https://kubsu.ru" rel="nofollow">18 Ссылка, по которой запрещен переход поисковикам</a></li>
+            <li><a href="https://kubsu.ru" rel="noindex nofollow">19 Ссылка, запрещенная для индексации</a></li>
+            <li>20
+                <ol>
+                    <li><a href="https://www.kubsu.ru">Сайт КубГУ</a></li>
+                    <li><a href="https://dns-shop.ru">Сайт электротоваров</a></li>
+                </ol>
+            </li>
+            <li><a href="ftp://login:password@server/file.pdf">21 Ссылка на FTP с авторизацией</a></li>
+        </ul>
+    </section>
+
+        <section id="table" class="col-12 p-3">
+        <h2>Таблица</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td colspan="2">5</td>
+                <td>6</td>
+                <td rowspan="2">7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+            </tr>
+            <tr>
+                <td colspan="4">10</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+        <section id="form" class="col-12 p-3">
+        <h2>Форма</h2>
+        <form action="#" method="get">
+            <label>
+                ФИО: <br>
+                <input type="text" name="field-name" placeholder="Введите ФИО" pattern="[А-Яа-яЁё\s-]+" title="Введите только буквы, пробелы и дефис" required>
+            </label><br><br>
+            <label>
+                Телефон: <br>
+                <input type="tel" name="field-tel" placeholder="Введите номер телефона" pattern="[0-9\s+()-]+" title="Введите только цифры, пробелы, +, - и скобки" required>
+            </label><br><br>
+            <label>
+                E-mail: <br>
+                <input type="email" name="field-email" placeholder="Введите почту">
+            </label><br><br>
+            <label>
+                Дата рождения:<br>
+                <input type="date" name="field-date">
+            </label><br><br>
+            Пол:
+            <label>
+                <input type="radio" name="field-gender" value="male"> Мужской
+            </label>
+            <label>
+                <input type="radio" name="field-gender" value="female"> Женский
+            </label><br><br>
+            <label>
+                Любимый язык программирования:<br>
+                <select name="field-proglang[]" multiple="multiple">
+                    <option value="pascal">Pascal</option>
+                    <option value="c">C</option>
+                    <option value="cpp">C++</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="php">PHP</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="haskel">Haskel</option>
+                    <option value="clojure">Clojure</option>
+                    <option value="prolog">Prolog</option>
+                    <option value="scala">Scala</option>
+                </select>
+            </label><br><br>
+            <label>
+                Биография:<br>
+                <textarea name="field-bio"></textarea>
+            </label><br><br>
+            <label>
+                <input type="checkbox" name="field-contract" value="yes">С контрактом ознакомлен(а)
+            </label><br><br>
+            <input type="submit" value="Сохранить">
+        </form>
+    </section>
+
+        <section id="calculator" class="col-12 p-3">
+            <h2>Калькулятор стоимости заказа</h2>
+
+            <form id="calculator-form">
+                <label for="product">Выберите товар:</label><br>
+
+                <select id="product">
+                    <option value="100">Тетрадь — 100 руб.</option>
+                    <option value="50">Ручка — 50 руб.</option>
+                    <option value="500">Книга — 500 руб.</option>
+                </select>
+
+                <br><br>
+
+                <label for="quantity">Количество товара:</label><br>
+
+                <input
+                        type="text"
+                        id="quantity"
+                        placeholder="Введите количество"
+                >
+
+                <br><br>
+
+                <button type="submit">Рассчитать стоимость</button>
+            </form>
+            <br>
+            <p id="message"></p>
+        </section>
+    </div>
+</main>
+
+<footer class="p-2">
+    <div class="container-fluid">
+        <p>(с) Руслан Хорьков</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
